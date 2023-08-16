@@ -6,53 +6,39 @@ import (
 	"os"
 )
 
-
 func main() {
-	var nome string
-	var email string
-
-	fmt.Println("Nome: ")
-	fmt.Scanln(&nome)
-
-	fmt.Println("E-mail: ")
-	fmt.Scanln(&email)
-
-	leitor := bufio.NewReader(os.Stdin)
-	msg, _ := leitor.ReadString('\n')
-	fmt.Println(msg)
-
 	var contatos [5]Contato
-	var c = Contato{
-		Nome : nome,
-		Email : email,
+
+	for i := 0; i < len(contatos); i++ {
+		fmt.Println("Nome:")
+		nome, _ := leitor.ReadString('\n')
+
+		fmt.Println("E-mail:")
+		email, _ := leitor.ReadString('\n')
+
+		contato := Contato{
+			Nome:  nome,
+			Email: email,
+		}
+
+		contatos = addContato(contato, contatos)
+		fmt.Println("***************************************")
 	}
-
-	contatos = addContato(c , contatos)
-
-	contatos = excluirContato(contatos)
 
 	fmt.Println(contatos)
 }
 
+var leitor = bufio.NewReader(os.Stdin)
+
 type Contato struct {
-	Nome string
+	Nome  string
 	Email string
 }
 
 func addContato(contato Contato, contatos [5]Contato) [5]Contato {
-	for i, c := range contatos {
-		if (c == Contato{}) {
+	for i := range contatos {
+		if contatos[i] == (Contato{}) {
 			contatos[i] = contato
-			break
-		}
-	}
-	return contatos
-}
-
-func excluirContato(contatos [5]Contato) [5]Contato {
-	for i, c := range contatos{
-		if (c == Contato{}){
-			contatos [i - 1] = c
 			break
 		}
 	}
