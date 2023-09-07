@@ -1,12 +1,13 @@
 package main
 
 import (
-	"ac3/contato"
-	"ac3/utils"
+	"ac3-agenda/contato"
+	"ac3-agenda/utils"
 	"bufio"
 	"fmt"
 	"os"
 	"strings"
+	"./agenda"
 )
 
 func main() {
