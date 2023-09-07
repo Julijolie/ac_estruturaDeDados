@@ -1,6 +1,7 @@
 # avaliação continuada da matéria "Estruturas de dados", IBMEC.
 
 *AC3*
+
 Subir no mesmo repositório enviado para as ACs anteriores
 Submeter link via estudante
 Evolua o projeto desenvolvido na AC2 (utilize o gabarito fornecido), incluindo as seguintes modificações e funcionalidades:
@@ -12,11 +13,13 @@ Atualize a interface por linha de comando para incluir a opção de exibir todos
 Atualize a interface por linha de comando para poder editar o e-mail de um contato previamente salvo. A interface deve exibir os contatos armazenados e pedir para o usuário indicar o índice do contato que quer ser alterado. Em seguida, o programa pede o novo e-mail e chama a função editaEmail, implementada no exercício 3.
 
 *AC4*
+
 Subir no mesmo repositório enviado para as ACs anteriores
 Submeter link via estudante
 Implemente o algoritmo da Torre de Hanói. O código deve ter uma função main e uma função hanoi. A função main deve chamar a função hanoi e, em seguida, informar pelo terminal o número de movimentos necessários para a solução da torre.
 
 *AC5*
+
 Subir no mesmo repositório enviado para as ACs anteriores
 Submeter link via estudante
 Elabore um programa em Go que implemente e teste o seguinte problema:
