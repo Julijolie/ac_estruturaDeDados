@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+)
+
+func hanoi(n int, origem, destino, trabalho string) {
+	if n > 0 {
+		hanoi(n-1, origem, trabalho, destino)
+		fmt.Printf("Mova o disco %d de %s para %s\n", n, origem, destino)
+		hanoi(n-1, trabalho, destino, origem)
+	}
+}
+
+func main() {
+	n := 3 // Número de discos
+	origem := "A"
+	destino := "C"
+	trabalho := "B"
+	hanoi(n, origem, destino, trabalho)
+}
