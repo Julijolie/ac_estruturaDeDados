@@ -1,17 +1,15 @@
 package main
 
 import (
-	"ac3-agenda/contato"
-	"ac3-agenda/utils"
+	"ac3-agenda/contatos"
 	"bufio"
 	"fmt"
 	"os"
 	"strings"
-	"./agenda"
 )
 
 func main() {
-	var contatos [5]contato.Contato
+	var contatos [5]contato.Contatos
 
 	for {
 		fmt.Println("Escolha uma opção:")
