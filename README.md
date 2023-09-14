@@ -27,4 +27,5 @@ Elabore um programa em Go que implemente e teste o seguinte problema:
 Dado um array de números inteiros positivos, considerado ordenado crescentemente, e um valor alvo, encontre um par de números no array cuja soma seja igual ao valor alvo. Se nenhum par for encontrado, retorne um valor (-1, -1) indicando que nenhum par foi encontrado. Resolva esse problema com um algoritmo cuja complexidade é O(n).
 
 *AC6*
+
 Implemente um programa em Go que faça inserção de valores inteiros em uma lista alocada sequencialmente, de forma que a lista permaneça sempre ordenada. A solução final deve ser O(n). Caso precise utilizar alguma função de busca, escolha a de menor complexidade para o caso.
