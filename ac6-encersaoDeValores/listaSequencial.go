@@ -1,5 +1,8 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+)
 
 const M = 5
 
@@ -27,10 +30,20 @@ func main() {
 }
 
 func insereOrd(v *[M]int, n *int, novoValor int) {
-	if *n = *M{
-		"overflow"
+	// Encontrar a posição correta para inserir o novoValor mantendo a lista ordenada.
+	pos := 0
+	for pos < *n && novoValor > v[pos] {
+		pos++
 	}
-	else{
-		for (i=0; )
+
+	// Deslocar os elementos à direita para abrir espaço para o novoValor.
+	for i := *n; i > pos; i-- {
+		v[i] = v[i-1]
 	}
+
+	// Inserir o novoValor na posição correta.
+	v[pos] = novoValor
+
+	// Incrementar o tamanho da lista.
+	*n++
 }
